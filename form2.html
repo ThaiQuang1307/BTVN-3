@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <style>
+        table,tr,th, td {
+            border: 2px solid #000;
+        }
+        td {
+            padding: 10px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="get">
+        <h2>Đăng ký thành viên</h2>
+        <table >
+            <thead>
+                <tr>
+                    <td><label for="hoten">Họ tên:</label></td>
+                    <td><input type="text" name="HoTen" id="hoten" placeholder="Vui lòng nhập Họ tên"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Mật khẩu:</label></td>
+                    <td><input type="password" name="matkhau" id="password" placeholder="Vui lòng nhập Mật khẩu"></td>
+
+                </tr>
+                <tr>
+                    <td>Giới tính:</td>
+                    <td>
+                        <input type="radio" name="gioitinh" id="nam" value="Nam">
+                        <label for="nam">Nam</label>
+                        <input type="radio" name="gioitinh" id="nu" value="Nu">
+                        <label for="nu">Nữ</label>
+                        <input type="radio" name="gioitinh" id="khongcongbo" value="KhongCongBo">
+                        <label for="khongcongbo">Không công bố</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích:</td>
+                    <td>
+                        <input type="checkbox" name="sothich" id="xemphim" value="XemPhim">
+                        <label for="xemphim">Xem phim</label>
+                        <br>
+                        <input type="checkbox" name="sothich" id="docsach" value="DocSach">
+                        <label for="docsach">Đọc sách</label>
+                        <br>
+                        <input type="checkbox" name="sothich" id="nghenhac" value="NgheNhac">
+                        <label for="nghenhac">Nghe nhạc</label>
+                        <br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tuoi">Tuổi:</label></td>
+                    <td><input type="number" name="Tuoi" id="tuoi" min="0"></td>
+                </tr>
+                <tr>
+                    <td><label for="timkiem">Từ khóa tìm kiếm:</label></td>
+                    <td><input type="text" id="timkiem" name="TimKiem"></td>
+                </tr>
+                <tr>
+                    <td><label for="gioithieu">Giới thiệu bản thân:</label></td>
+                    <td>
+                        <textarea name="GioiThieu" id="gioithieu" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email có thể liên hệ:</label></td>
+                    <td>
+                        <input type="email" id="email" name="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="diachiweb">Địa chỉ web của bạn:</label></td>
+                    <td>
+                        <input type="text" id="diachiweb" name="DiaChiWeb">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="numberphome">Số điện thoại:</label></td>
+                    <td>
+                        <input type="number" id="numberphome" name="NumberPhone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Các loại chọn <br>Thời gian</td>
+                    <td>
+                        <strong>Ngày tháng</strong>
+                        <br><br>
+                        <label for="ngay">Chọn ngày:</label>
+                        <input type="date" name="Ngay" id="ngay">
+                        <br>
+                        <label for="thang">Chọn tháng:</label>
+                        <input type="month" name="Thang" id="thang">
+                        <br>
+                        <label for="tuan">Chọn tuần:</label>
+                        <input type="week" name="Tuan" id="tuan">
+                        <br>
+
+                        <strong>Giờ</strong>
+                        <br><br>
+                        <label for="time">Chọn Giờ:</label>
+                        <input type="time" name="Time" id="time">
+                        <br>
+                        <label for="ngayvagio">Chọn cả Ngày + Giờ:</label>
+                        <input type="datetime-local" name="NgayVaGio" id="ngayvagio">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="colors">Màu yêu thích</label></td>
+                    <td><input type="color" name="Color" id="colors"></td>
+                </tr>
+                <tr>
+                    <td><label for="sinhsong">Bạn đang sinh <br> sống ở <br> TP/Tỉnh nào?</label></td>
+                    <td><input type="text" id="sinhsong" name="SinhSong"></td>
+                </tr>
+            </thead>
+        </table>
+
+    </form>
+    
+</body>
+</html>
